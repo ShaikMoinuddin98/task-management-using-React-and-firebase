@@ -46,6 +46,7 @@ async function save(index)
   .then(async (res)=>{
     console.log(res)
   //  settasks(getdata.data().tasks)
+    arr=res.data().tasks
   let ninp=document.querySelector(".nameinp")
   let dinp=document.querySelector(".descinp")
   let datinp=document.querySelector(".datinp")
