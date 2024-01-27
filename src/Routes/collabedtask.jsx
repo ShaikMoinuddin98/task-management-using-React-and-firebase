@@ -101,12 +101,15 @@ const Collabedtask = () => {
      }
    
   return (
+      <>
+      {(!tasks.length)?<h2>No Collabs</h2>:<h2>Collabs</h2>}
     <div>
       {
       tasks.map((i)=> <><Collabcard ind={tasks.indexOf(i)} data={tasks}/> <div style={{display:"flex",justifyContent:"space-around"}}>
       <input checked={i.status} onClick={()=>check(i)} style={{margin:"0%",padding:"0%", width:"auto"}} type="checkbox"  id="checkstat" />  <a  onClick={()=>remove(i)}>Remove</a> </div><br /><br /></> )
       }
     </div>
+      </>
   )
 }
 
