@@ -111,7 +111,7 @@ const Collab = () => {
     
   return (
     <>
-    <h1>Registered users</h1>
+    <h1>Users Ready To Collab</h1>
        <Table striped width={"600px"} height={"300px"}>
       <thead>
         <tr>
