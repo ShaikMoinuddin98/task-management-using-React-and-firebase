@@ -42,6 +42,10 @@ function update(index)
 }
 async function save(index)
 {
+  let getdata=await getDoc(docref)
+  .then(async (res)=>{
+    console.log(res)
+  //  settasks(getdata.data().tasks)
   let ninp=document.querySelector(".nameinp")
   let dinp=document.querySelector(".descinp")
   let datinp=document.querySelector(".datinp")
@@ -51,8 +55,12 @@ async function save(index)
   arr[index].date=datinp.value
   console.log(arr)
   let updatedtasks=[...arr]
-  await updateDoc(docref,{tasks:arr})
-  settasks(updatedtasks)
+  console.log(updatedtasks)
+  await updateDoc(docref,{tasks:updatedtasks})
+  .then((res)=>{
+    settasks(updatedtasks)
+
+ 
   let namcont=document.querySelectorAll(".heading")
   let descont=document.querySelectorAll(".desc")
   let datcont=document.querySelectorAll(".date")
@@ -61,6 +69,9 @@ async function save(index)
   datcont[index].innerText=datinp.value
   let sav=document.querySelectorAll(".save")
   sav[index].style.display="none"
+  
+  })
+})
 
 }
     let styling={backgroundColor:'white'}
