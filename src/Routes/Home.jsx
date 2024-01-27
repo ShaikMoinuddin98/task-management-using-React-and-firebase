@@ -88,9 +88,10 @@ export function Home(){
 
     return ( <div>
         <h2>Welcome,{data.name}</h2>
-        <div style={{display:"flex",justifyContent:"space-around"}}>
+        <div style={{display:"flex",justifyContent:"space-around",width:"350px"}}>
         
         <button onClick={() => {handleSignOut()}}>Sign Out</button>
+            <button onClick={()=>{navigate('/collabedtasks')}}>Collabs</button>
         <button onClick={add}>Add Task</button>
         </div>
         <div style={{display:"none"}} id="taskinpbox">
