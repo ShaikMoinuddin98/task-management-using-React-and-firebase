@@ -75,9 +75,12 @@ async function save(index)
     
     <a onClick={()=>save(ind)} style={{display:"none"}} className="save">save</a>
     <div className='cont' >
-      <h3 className='heading'>{name}</h3> 
+      <h4 style={{margin:"0%"}}>Task name</h4>
+      <h3 style={{margin:"0%"}} className='heading'>{name}</h3> 
+      <h4 style={{margin:"0%"}}>Description</h4>
       <span className='desc'>{description}</span>
-      <p className='date'>{date}</p>
+      <h4 id="due" style={{margin:"0%"}}>Due</h4>
+      <p style={{margin:"0%"}} className='date'>{date}</p>
     </div>
 
     </>
