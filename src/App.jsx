@@ -38,7 +38,7 @@ function App() {
     },
     {
       path:'/collabedtasks',
-      element:<Collabedtask></Collabedtask>
+      element:<Protected><Collabedtask></Collabedtask></Protected>
     }
   ])
 
