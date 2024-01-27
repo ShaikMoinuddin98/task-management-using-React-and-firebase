@@ -1,0 +1,15 @@
+.userheading
+{
+    display: flex;
+    justify-content: space-evenly;
+   width: 300px;
+   
+}
+td
+{
+    border: 2px solid rgb(253, 201, 253);
+}
+th
+{
+    border: 2px solid rgb(253, 201, 253);
+}

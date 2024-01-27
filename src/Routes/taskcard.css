@@ -1,0 +1,43 @@
+.cont
+{
+    width:300px;
+    
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid rgb(218, 108, 218);
+    overflow: hidden;
+    white-space: normal;
+    word-wrap: break-word;
+}
+.heading
+{
+
+    margin: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgb(101, 92, 92);
+}
+.desc
+{
+    font-style: 1.2em;
+    text-align:start;
+    margin: 2%;
+    padding-left: 2%;
+   
+}
+.date
+{
+    border-top: 2px solid rgb(124, 112, 112);
+}
+
+.nameinp{
+    width:auto;
+}
+.descinp{
+    width:auto;
+}
+.datinp
+{
+    width: max-content;
+}
